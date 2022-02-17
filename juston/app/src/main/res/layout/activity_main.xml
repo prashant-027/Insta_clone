@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgnew"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="JUSTON!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnfacebook"
+        android:layout_width="116dp"
+        android:layout_height="92dp"
+        android:layout_alignLeft="@id/textView"
+        android:layout_alignBottom="@id/textView"
+        android:layout_marginLeft="-78dp"
+        android:layout_marginBottom="-518dp"
+        android:background="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/btninsta"
+        android:layout_width="124dp"
+        android:layout_height="98dp"
+        android:layout_alignLeft="@id/btnfacebook"
+        android:layout_alignBottom="@id/textView"
+        android:layout_marginLeft="213dp"
+        android:layout_marginBottom="-525dp"
+        android:background="@drawable/insta_logo" />
+
+    <ImageButton
+        android:id="@+id/btnirctc"
+        android:layout_width="124dp"
+        android:layout_height="98dp"
+        android:layout_alignLeft="@id/btnfacebook"
+        android:layout_alignBottom="@id/textView"
+        android:layout_marginLeft="213dp"
+        android:layout_marginBottom="-352dp"
+        android:background="@drawable/irctc" />
+
+    <ImageButton
+        android:id="@+id/btnmmt"
+        android:layout_width="124dp"
+        android:layout_height="98dp"
+        android:layout_alignLeft="@id/btnfacebook"
+        android:layout_alignBottom="@id/textView"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginBottom="-356dp"
+        android:background="@drawable/mmt" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="189dp"
+        android:layout_height="219dp"
+        android:layout_alignLeft="@id/textView"
+        android:layout_alignBottom="@id/textView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-244dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/social" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnfacebook"
+        android:layout_alignLeft="@id/btnfacebook"
+        android:layout_marginBottom="-49dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="monospace"
+        android:text="FACEBOOK"
+        android:textAlignment="center"
+        android:textColor="#ffffb0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignBottom="@id/btninsta"
+        android:layout_marginLeft="194dp"
+        android:layout_marginBottom="-56dp"
+        android:fontFamily="monospace"
+        android:text="INSTAGRAM"
+        android:textAlignment="center"
+        android:textColor="#ffffb0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignBottom="@id/btnirctc"
+        android:layout_marginLeft="231dp"
+        android:layout_marginBottom="-57dp"
+        android:fontFamily="monospace"
+        android:text="IRCTC"
+        android:textAlignment="center"
+        android:textColor="#ffffb0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignBottom="@id/btnmmt"
+        android:layout_marginLeft="-11dp"
+        android:layout_marginBottom="-50dp"
+        android:fontFamily="monospace"
+        android:text="MakeMyTrip"
+        android:textAlignment="center"
+        android:textColor="#ffffb0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

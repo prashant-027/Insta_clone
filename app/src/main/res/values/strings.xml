@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My IG</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="dont_have_an_account_sign_up">Dont have an account? Sign up.</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="create_account">Create Account</string>
+    <string name="fullname">FullName</string>
+    <string name="username">Username</string>
+    <string name="mobilenumber">MobileNumber</string>
+    <string name="male_female_none">Male/Female/None</string>
+    <string name="birth_date">Birth date</string>
+    <string name="select_date">Select birth date</string>
+    <string name="bio_optional">Bio(Optional)</string>
+    <string name="website_optional">Website(Optional)</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In.</string>
+    <string name="likes">Likes</string>
+    <string name="caption">Caption</string>
+    <string name="tags">Tags</string>
+    <string name="comments">Comments</string>
+    <string name="_0_days_ago">0 days ago</string>
+    <string name="_0">0</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <!--*******TInstagram**********-->
+    <TextView
+        android:id="@+id/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:gravity="center_horizontal"
+        android:text="@string/instagram"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--*******email**********-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_email"
+        android:layout_marginTop="50dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_below="@id/instagram">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="@string/email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--*******password**********-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password"
+        android:layout_marginTop="12dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/login_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--*******log in**********-->
+    <Button
+        android:id="@+id/Login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_password"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TableRow
+        android:id="@+id/sr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/textcolor"
+        android:layout_above="@+id/signup"/>
+
+    <!--*******signup**********-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="@string/dont_have_an_account_sign_up"
+        android:textSize="16sp"
+        android:textColor="@color/dark_purple"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="15dp"/>
+
+</RelativeLayout>

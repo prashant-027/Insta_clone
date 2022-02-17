@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@drawable/insta_animation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1"
+        android:layout_above="@+id/sr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--*******create account**********-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcreate"
+                android:text="@string/create_account"
+                android:textStyle="italic"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"/>
+
+            <!--*******Full Name**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/Fullname"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/fullname"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******Username**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/Username"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/username"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******Email**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/signup_email"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/email"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******mobile number**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/linear1"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countrycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:ccp_contentColor="@color/white">
+                </com.hbb20.CountryCodePicker>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobilenoo"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:textColorHint="@color/white"
+                    android:layout_weight="80">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="@string/mobilenumber"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:background="@android:color/transparent"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--*******password**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/signup_password"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/password"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******gender**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/gender"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/male_female_none"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******birt date text**********-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/birthdate"
+                android:drawableStart="@drawable/ic_birth"
+                android:drawableTint="@color/white"
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColorHint="@color/white"
+                android:hint="@string/select_date"
+                android:focusable="false"
+                android:gravity="center"
+                tools:targetApi="m" />
+
+            <!--*******bio**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/bio"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/bio_optional"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******website**********-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/website"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/website_optional"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--*******log in**********-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/signup_button"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_button"
+                android:text="@string/sign_up"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--*******line**********-->
+    <TableRow
+        android:id="@+id/sr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/textcolor"
+        android:layout_above="@+id/AlreadyHavesignin"/>
+
+    <!--*******have account**********-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AlreadyHavesignin"
+        android:text="@string/already_have_an_account_sign_in"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="15dp"/>
+
+</RelativeLayout>
